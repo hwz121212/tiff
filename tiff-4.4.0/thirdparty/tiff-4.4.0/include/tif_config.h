@@ -47,7 +47,7 @@
 /* #undef HAVE_GL_GL_H */
 
 /* Define to 1 if you have the <io.h> header file. */
-#define HAVE_IO_H 1
+//#define HAVE_IO_H 1
 
 /* Define to 1 if you have the `jbg_newlen' function. */
 /* #undef HAVE_JBG_NEWLEN */

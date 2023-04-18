@@ -20,6 +20,7 @@
     <ClInclude Include="include\tiffvers.h" />
     <ClInclude Include="include\tif_config.h" />
     <ClInclude Include="include\tif_dir.h" />
+    <ClInclude Include="include\tif_fax3.h" />
     <ClInclude Include="include\tif_predict.h" />
     <ClInclude Include="include\uvcode.h" />
   </ItemGroup>
@@ -60,10 +61,10 @@
     <ClCompile Include="src\tif_swab.c" />
     <ClCompile Include="src\tif_thunder.c" />
     <ClCompile Include="src\tif_tile.c" />
+    <ClCompile Include="src\tif_unix.c" />
     <ClCompile Include="src\tif_version.c" />
     <ClCompile Include="src\tif_warning.c" />
     <ClCompile Include="src\tif_webp.c" />
-    <ClCompile Include="src\tif_win32.c" />
     <ClCompile Include="src\tif_write.c" />
     <ClCompile Include="src\tif_zip.c" />
     <ClCompile Include="src\tif_zstd.c" />
@@ -109,15 +110,13 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
       <AdditionalIncludeDirectories>include;$(RemoteRootDir)/$(ProjectName)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>
-      </PreprocessorDefinitions>
+      <PreprocessorDefinitions>TIFF_DISABLE_DEPRECATED</PreprocessorDefinitions>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
       <AdditionalIncludeDirectories>include;$(RemoteRootDir)/$(ProjectName)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>
-      </PreprocessorDefinitions>
+      <PreprocessorDefinitions>TIFF_DISABLE_DEPRECATED</PreprocessorDefinitions>
     </ClCompile>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

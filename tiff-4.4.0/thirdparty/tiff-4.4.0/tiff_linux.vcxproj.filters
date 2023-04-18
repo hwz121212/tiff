@@ -42,6 +42,9 @@
     <ClInclude Include="include\tif_config.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="include\tif_fax3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\tif_aux.c">
@@ -170,7 +173,7 @@
     <ClCompile Include="src\tif_zstd.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\tif_win32.c">
+    <ClCompile Include="src\tif_unix.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
