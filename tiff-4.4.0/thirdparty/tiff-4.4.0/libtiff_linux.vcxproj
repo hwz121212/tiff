@@ -61,6 +61,7 @@
     <ClCompile Include="src\tif_swab.c" />
     <ClCompile Include="src\tif_thunder.c" />
     <ClCompile Include="src\tif_tile.c" />
+    <ClCompile Include="src\tif_unix.c" />
     <ClCompile Include="src\tif_version.c" />
     <ClCompile Include="src\tif_warning.c" />
     <ClCompile Include="src\tif_webp.c" />

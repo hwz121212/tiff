@@ -173,5 +173,8 @@
     <ClCompile Include="src\tif_zstd.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\tif_unix.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
