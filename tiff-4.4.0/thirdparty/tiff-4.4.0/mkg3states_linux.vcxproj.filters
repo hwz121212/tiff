@@ -9,7 +9,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="dlltest.c">
+    <ClCompile Include="src\mkg3states.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

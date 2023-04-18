@@ -11,7 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="dlltest.c" />
+    <ClCompile Include="src\mkg3states.c" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{07319FEE-3F66-4F30-9E28-7CA992BA01F8}</ProjectGuid>
@@ -22,7 +22,7 @@
     <ApplicationTypeRevision>1.0</ApplicationTypeRevision>
     <TargetLinuxPlatform>Generic</TargetLinuxPlatform>
     <LinuxProjectType>{2238F9CD-F817-4ECC-BD14-2524D2669B35}</LinuxProjectType>
-    <ProjectName>dlltest</ProjectName>
+    <ProjectName>mkg3states</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
@@ -50,26 +50,28 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>include;$(SolutionDir)thirdparty\bzip2-1.0.8\include;/root/projects/bzip2/include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>include;port;/root/projects/libport;/root/projects/libtiff/include</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>
       </PreprocessorDefinitions>
     </ClCompile>
     <Link>
-      <LibraryDependencies>
-      </LibraryDependencies>
-      <AdditionalDependencies>/root/bin/$(Configuration)/bzip2.so</AdditionalDependencies>
+      <LibraryDependencies>tiff</LibraryDependencies>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+      <AdditionalLibraryDirectories>/root/lib/$(Configuration)/</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>include;$(SolutionDir)thirdparty\bzip2-1.0.8\include;/root/projects/bzip2/include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>include;port;/root/projects/libport;/root/projects/libtiff/include</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>
       </PreprocessorDefinitions>
     </ClCompile>
     <Link>
-      <LibraryDependencies>
-      </LibraryDependencies>
-      <AdditionalDependencies>/root/bin/$(Configuration)/bzip2.so</AdditionalDependencies>
+      <LibraryDependencies>tiff</LibraryDependencies>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+      <AdditionalLibraryDirectories>/root/lib/$(Configuration)/</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
