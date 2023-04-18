@@ -39,6 +39,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tiff-palette", "demo\contri
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tiff-rgb", "demo\contrib\dbs\tiff-rgb_linux.vcxproj", "{47C065C0-E420-4ECA-BA46-B62C39A3E6C2}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ascii_tag", "demo\test\ascii_tag_linux.vcxproj", "{DF6594E1-C0F9-42E3-B437-40D325BC60C4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -85,6 +87,10 @@ Global
 		{47C065C0-E420-4ECA-BA46-B62C39A3E6C2}.Debug|x64.Build.0 = Debug|x64
 		{47C065C0-E420-4ECA-BA46-B62C39A3E6C2}.Release|x64.ActiveCfg = Release|x64
 		{47C065C0-E420-4ECA-BA46-B62C39A3E6C2}.Release|x64.Build.0 = Release|x64
+		{DF6594E1-C0F9-42E3-B437-40D325BC60C4}.Debug|x64.ActiveCfg = Debug|x64
+		{DF6594E1-C0F9-42E3-B437-40D325BC60C4}.Debug|x64.Build.0 = Debug|x64
+		{DF6594E1-C0F9-42E3-B437-40D325BC60C4}.Release|x64.ActiveCfg = Release|x64
+		{DF6594E1-C0F9-42E3-B437-40D325BC60C4}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -106,6 +112,7 @@ Global
 		{21ED1E50-2C17-4EA8-A03A-0B2BC70AB4AA} = {4A9BA1CB-6DF7-4807-BE9D-8ED8B4FDBD57}
 		{BF1D72C6-396A-406F-A49B-028AB257481C} = {4A9BA1CB-6DF7-4807-BE9D-8ED8B4FDBD57}
 		{47C065C0-E420-4ECA-BA46-B62C39A3E6C2} = {4A9BA1CB-6DF7-4807-BE9D-8ED8B4FDBD57}
+		{DF6594E1-C0F9-42E3-B437-40D325BC60C4} = {C5B3037C-F44E-4532-A7F0-4F76D98A47E7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5806D430-DEB4-4E2B-8838-C80B410D7661}
